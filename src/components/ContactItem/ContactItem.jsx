@@ -7,12 +7,12 @@ export const ContactItem = ({ id, name, number, onDeleteContact }) => {
       <Text>{name}: {number}</Text>
       <Button type="button" onClick={() => onDeleteContact(id)}>Delete</Button>
     </Contact>
-  )
-}
+  );
+};
 
 ContactItem.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  number: PropTypes.string.isRequired,    
+  number: PropTypes.string.isRequired,
   onDeleteContact: PropTypes.func.isRequired,
-}
+};
